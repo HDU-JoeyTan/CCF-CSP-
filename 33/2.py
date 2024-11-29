@@ -1,0 +1,7 @@
+n,m=map(int,input().split())
+para_a=list(set([i.lower() for i in input().split()]))
+para_b=list(set([i.lower() for i in input().split()]))
+jiao=len(set(para_a)&set(para_b))
+bing=len(set(para_a)|set(para_b))
+print(jiao)
+print(bing)
