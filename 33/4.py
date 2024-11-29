@@ -1,27 +1,5 @@
 c,m,n=map(int,input().split())
 water=[]
-def check(water):
-    for i in range(len(water)):
-        if water[i][1]>=5:
-            return i
-    return -1
-def op(water,p):
-    for i in range(len(water)):
-        if water[i][0] == p:
-            water[i][1] += 1
-            break
-    index=check(water)
-    while index!=-1:
-        if len(water)!=1:
-            if index==0:
-                water[index+1][1]+=1
-            elif index==len(water)-1:
-                water[index-1][1]+=1
-            else:
-                water[index+1][1]+=1
-                water[index-1][1]+=1
-        water.remove(water[index])
-        index = check(water)
 def op1(water,p):
     index=-1
     for i in range(len(water)):
