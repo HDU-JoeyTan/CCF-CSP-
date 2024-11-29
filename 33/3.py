@@ -7,6 +7,8 @@ def check(num,fm):
             if i[j] in digit:
 
 
+
+
 for i in range(n):
     f=input().split()
     check(int(f[0]),f[1:])
